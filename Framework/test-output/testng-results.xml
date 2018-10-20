@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Regression Suite" duration-ms="7331" started-at="2018-10-20T07:04:29Z" finished-at="2018-10-20T07:04:36Z">
+    <groups>
+    </groups>
+    <test name="Regression Test" duration-ms="7331" started-at="2018-10-20T07:04:29Z" finished-at="2018-10-20T07:04:36Z">
+      <class name="com.restassured.framework.api.TwitterEndToEndWorkflowTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.restassured.framework.api.TwitterEndToEndWorkflowTest@42d80b78]" name="setup" is-config="true" duration-ms="581" started-at="2018-10-20T07:04:29Z" finished-at="2018-10-20T07:04:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="postTweet()[pri:0, instance:com.restassured.framework.api.TwitterEndToEndWorkflowTest@42d80b78]" name="postTweet" duration-ms="3665" started-at="2018-10-20T07:04:30Z" finished-at="2018-10-20T07:04:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postTweet -->
+        <test-method status="PASS" signature="getTweet()[pri:0, instance:com.restassured.framework.api.TwitterEndToEndWorkflowTest@42d80b78]" name="getTweet" duration-ms="1212" started-at="2018-10-20T07:04:33Z" depends-on-methods="com.restassured.framework.api.TwitterEndToEndWorkflowTest.postTweet" finished-at="2018-10-20T07:04:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTweet -->
+        <test-method status="PASS" signature="deleteTweet()[pri:0, instance:com.restassured.framework.api.TwitterEndToEndWorkflowTest@42d80b78]" name="deleteTweet" duration-ms="1005" started-at="2018-10-20T07:04:34Z" depends-on-methods="com.restassured.framework.api.TwitterEndToEndWorkflowTest.getTweet" finished-at="2018-10-20T07:04:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteTweet -->
+      </class> <!-- com.restassured.framework.api.TwitterEndToEndWorkflowTest -->
+      <class name="com.restassured.framework.api.TwitterTweetsTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.restassured.framework.api.TwitterTweetsTest@3bfdc050]" name="setup" is-config="true" duration-ms="1" started-at="2018-10-20T07:04:35Z" finished-at="2018-10-20T07:04:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="getTweets()[pri:0, instance:com.restassured.framework.api.TwitterTweetsTest@3bfdc050]" name="getTweets" duration-ms="820" started-at="2018-10-20T07:04:35Z" finished-at="2018-10-20T07:04:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTweets -->
+      </class> <!-- com.restassured.framework.api.TwitterTweetsTest -->
+    </test> <!-- Regression Test -->
+  </suite> <!-- Regression Suite -->
+</testng-results>
