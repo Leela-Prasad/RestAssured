@@ -22,6 +22,7 @@ public class TwitterTweetsTest extends AbstractBaseTest {
 	public void setup() {
 		requestSpec = getRequestSpecification().basePath("/1.1/statuses");
 		responseSpec = getResponseSpecification();
+		RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
 	}
 	
 	@Test
