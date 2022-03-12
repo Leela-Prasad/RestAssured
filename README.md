@@ -11,6 +11,4 @@ If you want to log, then you can use this in the Request Builder:
 requestBuilder.log(LogDetail.ALL);
 
 If you want the ifValidationFails in all the requests, then you can set it globally in @BeforeClass without putting that in Request Specification like this:
-RestAssured.enableLoggingOfRequestAndResponseIfValidationFails()
-
-This is Readme file
+RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
